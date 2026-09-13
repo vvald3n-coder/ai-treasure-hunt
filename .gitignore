@@ -1,6 +1,7 @@
 __pycache__/
 *.py[cod]
 .venv/
+venv/
 data/*
 !data/.gitkeep
 output/*
@@ -11,10 +12,24 @@ output/*
 .env
 .env.*
 !.env.example
+.envrc
 *.pem
 *.key
+*.p8
 *.p12
 *.pfx
+id_rsa
+id_ed25519
+*credentials*
+*Credentials*
+client_secret*.json
+service-account*.json
+*.token
+secrets.*
+
+# Home-plane private material; never commit.
+Personal Holdings/
+AltaML/
 *.sqlite*
 *.db
 .DS_Store
